@@ -1,0 +1,32 @@
+#include <iostream.h>
+#include<conio.h>
+using namespace std;
+
+class Example
+{
+	private:
+		int val;
+	public:
+
+		void init_val(int v);
+		void print_val();
+};
+
+void Example::init_val(int v)
+{
+	val=v;
+}
+
+void Example::print_val()
+{
+	cout<<"val: "<<val<<endl;
+}
+int main()
+{
+	
+	Example Ex;
+	Ex.init_val(100);
+	Ex.print_val();
+	
+	return 0;
+}
