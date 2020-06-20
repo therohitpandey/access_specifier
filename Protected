@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Example1
+{
+	protected:
+		int a;
+};
+class Example2:public Example1
+{
+	public:
+		void init_a(int a)
+		{
+			this->a=a;
+		}
+		void print_a()
+		{
+			cout<<"a: "<<a<<endl;
+		}
+};
+
+int main()
+{
+	//derived class object 
+	Example2 Ex;
+	Ex.init_a(100);
+	Ex.print_a();
+	
+	return 0;
+}
